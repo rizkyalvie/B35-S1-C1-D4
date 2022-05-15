@@ -139,28 +139,11 @@ function renderBlog(event) {
                 </div>
                 <div class="bd-tech">
                     <p>Technologies</p>
-                    <div class="i-tech">
-                        <!--TI = Tech Icon-->
-                        <div class="ti-left">
-                            <div>
-                                <i class="fa-brands fa-html5"></i>
-                                <p>HTML</p>
-                            </div>
-                            <div>
-                                <i class="fa-brands fa-node-js"></i>
-                                <p>nodeJs </p>
-                            </div>
-                        </div>
-                        <div class="ti-right">
-                            <div>
-                                <i class="fa-brands fa-css3-alt"></i>
-                                <p>CSS</p>
-                            </div>
-                            <div>
-                                <i class="fa-brands fa-react"></i>
-                                <p>ReactJs</p>
-                            </div>
-                        </div>
+                    <div class="tech-body">
+                    ${(data[i].icons.html === true) ? '<div class="tech-html"><i class="fa-brands fa-html5"></i><p>HTML</p></div>' : ''}
+                    ${(data[i].icons.css === true) ? '<div class="tech-css"><i class="fa-brands fa-css3-alt"></i><p>CSS</p></div>' : ''}
+                    ${(data[i].icons.nodeJs === true) ? '<div class="tech-node"><i class="fa-brands fa-node-js"></i><p>nodeJs</p></div>' : ''}
+                    ${(data[i].icons.reactJs === true) ? '<div class="tech-react"><i class="fa-brands fa-react"></i><p>reactJs</p></div>' : ''}
                     </div>
                 </div>
             </div>
