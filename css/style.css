@@ -597,7 +597,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .mpc-content {
-    height: 60px;
+    height: 63px;
     overflow: hidden;
     margin: 20px 0px 20px 0px;
     text-align: justify;
@@ -721,6 +721,7 @@ textarea::-webkit-scrollbar-thumb {
     display: flex;
     flex-wrap: wrap;
     gap: 20px 10px;
+    flex: 1;
 }
 
 .tech-body div {
